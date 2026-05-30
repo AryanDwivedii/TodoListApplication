@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: TodoListApplication
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/practiceDB
+    username: postgres
+    password: postgresroot
+  jpa:
+    hibernate:
+      ddl-auto: update
+jwt:
+  secretKey: fnaofnedfndafjiejiquqbiru283328u439twejfakndsdfanfjfaeidksad
+logging:
+  level:
+    org:
+      springframework:
+        security:
+          DEBUG

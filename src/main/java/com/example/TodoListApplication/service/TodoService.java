@@ -23,6 +23,7 @@ public class TodoService {
         item.setUser(user);
         TodoItem todoItem = repository.save(item);
         TodoCreationDto response = new TodoCreationDto();
+        response.setId(todoItem.getId());
         response.setTitle(todoItem.getTitle());
         response.setDescription(todoItem.getDescription());
         return response;
